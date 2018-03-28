@@ -3,7 +3,10 @@ package science.mengxin.didemo;
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 import org.springframework.context.ApplicationContext;
+import science.mengxin.didemo.controllers.ConstructorInjectedController;
+import science.mengxin.didemo.controllers.GetterInjectedController;
 import science.mengxin.didemo.controllers.MyController;
+import science.mengxin.didemo.controllers.PropertyInjectedController;
 
 @SpringBootApplication
 public class DiDemoApplication {
@@ -14,5 +17,10 @@ public class DiDemoApplication {
         MyController myController = (MyController) ctx.getBean("myController");
 
         myController.hello();
+
+        System.out.println(ctx.getBean(MyController.class).hello());
+        System.out.println(ctx.getBean(PropertyInjectedController.class).hello());
+        System.out.println(ctx.getBean(GetterInjectedController.class).hello());
+        System.out.println(ctx.getBean(ConstructorInjectedController.class).hello());
 	}
 }
