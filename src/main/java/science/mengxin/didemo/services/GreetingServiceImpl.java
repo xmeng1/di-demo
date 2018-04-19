@@ -19,7 +19,7 @@ public class GreetingServiceImpl implements GreetingService {
 
     @Override
     public String sayGreeting() {
-        System.out.println("sayGreeting invoke");
-        return "hello";
+        // System.out.println("sayGreeting invoke");
+        return "Hello - I am GreetingServiceImpl";
     }
 }
