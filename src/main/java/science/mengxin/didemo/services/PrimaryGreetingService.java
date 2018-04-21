@@ -17,7 +17,7 @@ import org.springframework.stereotype.Service;
 
 @Service
 @Primary  // this impl will be used primary if not qualifier
-@Profile("English")
+@Profile({"English", "default"})
 public class PrimaryGreetingService implements GreetingService {
 
     @Override
