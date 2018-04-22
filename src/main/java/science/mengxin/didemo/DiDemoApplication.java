@@ -10,6 +10,7 @@ import science.mengxin.didemo.controllers.GetterInjectedController;
 import science.mengxin.didemo.controllers.MyController;
 import science.mengxin.didemo.controllers.PropertyInjectedController;
 import science.mengxin.didemo.examplebeans.FakeDataSource;
+import science.mengxin.didemo.examplebeans.FakeJmsBroker;
 
 @SpringBootApplication
 public class DiDemoApplication {
@@ -27,5 +28,8 @@ public class DiDemoApplication {
         out.println(ctx.getBean(ConstructorInjectedController.class).hello());
         FakeDataSource fakeDataSource = ctx.getBean(FakeDataSource.class);
         out.print(fakeDataSource.toString());
+
+        FakeJmsBroker fakeJmsBroker = ctx.getBean(FakeJmsBroker.class);
+        out.print(fakeJmsBroker.toString());
 	}
 }
