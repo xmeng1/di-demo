@@ -1,7 +1,7 @@
 package science.mengxin.didemo.controllers;
 
 import org.springframework.stereotype.Controller;
-import science.mengxin.didemo.services.GreetingService;
+import science.mengxin.services.GreetingService;
 
 /**
  * User:    mengxin

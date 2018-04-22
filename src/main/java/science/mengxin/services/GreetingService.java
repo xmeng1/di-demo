@@ -1,10 +1,10 @@
-package science.mengxin.didemo.services;
+package science.mengxin.services;
 
 /**
  * User:    mengxin
  * Date:    28/03/2018
  * Project: di-demo
- * Package: science.mengxin.didemo.services
+ * Package: science.mengxin.services
  * Description: GreetingService.
  *
  * @author mengxin

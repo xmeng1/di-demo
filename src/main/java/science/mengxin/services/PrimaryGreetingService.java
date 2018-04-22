@@ -1,4 +1,4 @@
-package science.mengxin.didemo.services;
+package science.mengxin.services;
 
 import org.springframework.context.annotation.Primary;
 import org.springframework.context.annotation.Profile;
@@ -8,7 +8,7 @@ import org.springframework.stereotype.Service;
  * User:    mengxin
  * Date:    19/04/2018
  * Project: di-demo
- * Package: science.mengxin.didemo.services
+ * Package: science.mengxin.services
  * Description: PrimaryGreetingService.
  *
  * @author mengxin
