@@ -1,9 +1,5 @@
 package science.mengxin.didemo.services;
 
-import org.springframework.context.annotation.Primary;
-import org.springframework.context.annotation.Profile;
-import org.springframework.stereotype.Service;
-
 /**
  * User:    mengxin
  * Date:    19/04/2018
@@ -15,10 +11,13 @@ import org.springframework.stereotype.Service;
  * @version 1.0
  */
 
-@Service
-@Primary  // this impl will be used primary if not qualifier
-@Profile({"English", "default"})
+
 public class PrimaryGreetingService implements GreetingService {
+    private GreetingRepository greetingRepository;
+
+    public PrimaryGreetingService(GreetingRepository greetingRepository) {
+        this.greetingRepository = greetingRepository;
+    }
 
     @Override
     public String sayGreeting() {

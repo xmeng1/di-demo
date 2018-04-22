@@ -1,9 +1,5 @@
 package science.mengxin.didemo.services;
 
-import org.springframework.context.annotation.Primary;
-import org.springframework.context.annotation.Profile;
-import org.springframework.stereotype.Service;
-
 /**
  * <p>Date:    21/04/18
  *
@@ -11,10 +7,13 @@ import org.springframework.stereotype.Service;
  * @version 1.0
  */
 
-@Service
-@Primary
-@Profile("de")
 public class PrimaryGermanGreetingService implements GreetingService {
+
+    private GreetingRepository greetingRepository;
+
+    public PrimaryGermanGreetingService(GreetingRepository greetingRepository) {
+        this.greetingRepository = greetingRepository;
+    }
 
     @Override
     public String sayGreeting() {
