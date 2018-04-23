@@ -3,3 +3,10 @@ guru:
     username: Xin
     password: testPassword
     dburl: testUrl
+
+---
+spring:
+  profiles: de
+guru:
+  jms:
+    username: xin_de
