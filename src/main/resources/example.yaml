@@ -1,0 +1,36 @@
+# this is a comment
+
+name: Xin
+
+names:
+    - xin
+    - alice
+    - bob
+    - alex
+
+pound_sign: "#"
+
+book:
+  author: xin
+  publisher: xxx
+
+truth: yes
+
+another_truth: True
+
+more_true: true
+
+false: no #No, false FALSE
+
+string_val: "This is a quota"
+
+colon_string: "This is: string"
+
+new_line: /
+  asdf asdf
+  asdf asdf
+
+ignore_new_line: >
+  this is
+  just one long
+  string
